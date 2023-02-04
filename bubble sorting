@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+int main()
+{
+	int i,j,n,t;
+	char a[12];
+	printf("enter the no of elements in array :");
+	scanf("%d",&n);
+	printf("enter array elements :");
+	for(i=0;i<n;i++)
+	{
+	scanf("%d",&a[i]);	
+	}
+	for(i=0;i<n-1;i++)
+	{
+		for(j=i+1;j<n;j++)
+		{
+			if(a[i]>a[j])
+			{
+				t=a[i];
+				a[i]=a[j];
+				a[j]=t;
+			}
+		}
+	}
+	for(i=0;i<n;i++)
+	{
+		printf("%d\t",a[i]);
+	}
+	return 0;
+}
