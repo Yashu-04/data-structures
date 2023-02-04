@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+ x:int i,n;
+int fact=1;
+ //printf("enter the number :");//
+ scanf("%d",&n);
+ if(n>=1)
+ {#in
+ for(i=1;i<=n;i++)
+ {
+ 	fact=fact*i;
+ }
+}
+  else if(n==0)
+  {
+  fact=1;
+  }
+ else
+ {
+ printf("wrong input");
+ goto x;
+}
+ printf("factorial is :%d",fact);
+return 0;
+}
