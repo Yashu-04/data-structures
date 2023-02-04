@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+int main()
+{
+	int i,n,a[23],pos,key;
+	printf("enter the no of elements :");
+	scanf("%d",&n);
+	printf("enter the position :");
+	scanf("%d",&pos);
+	printf("enter the elements :");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	printf("enter the key value :");
+	scanf("%d",key);
+	for(i=n;i>=pos;i--)
+	{
+		a[i]=a[i-1];
+	}
+	for(i=0;i<=n;i++)
+	{
+		printf("%d",a[i]);
+	}
+	return 0;
+}
